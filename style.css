@@ -45,7 +45,58 @@ body {
 .hamburger-menu {
     display: none;
 }
+.fazer-pedido {
+    width: 237px;
+    height: 61px;
+    background: rgba(255, 102, 101, 0.85);
+    border-radius: 5px;
+    border-style: none;
+    color: black;
+    font-family: 'Quicksand';
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic-review {
+    width: 70px;
+    height: 70px;
+}
+.footer {
+    background-color: #D9D9D9;
+}
 
 @media(max-device-width: 480px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    .nav-list {
+        display: none;
+    }
+    .hero-text-container{
+        display: none;
+    }
+    .nice-cake {
+        width: 300px;
+        height: 300px;
+        align-content: center;
+
+    }
+    .fazer-pedido{
+        justify-content: center;
+    }
+    .footer-logo img{
+        width: 220px;
+        height: 130px;
+    }
+    .footer-container{
+        justify-content: space-around;
+
+    }
 
 }
