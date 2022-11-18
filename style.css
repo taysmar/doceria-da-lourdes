@@ -2,6 +2,7 @@
 
 * {
     margin: 0;
+    font-family:'Quicksand' ;
 }
 
 body {
@@ -10,9 +11,7 @@ body {
 .header-container {
     margin-top: 16px;
     display: flex;
-    align-items: center;
     width: 100%;
-    justify-content: space-around;
     
 }
 .logo img {
@@ -46,8 +45,8 @@ body {
     display: none;
 }
 .fazer-pedido {
-    width: 237px;
-    height: 61px;
+    width: 228px;
+    height: 53px;
     background: rgba(255, 102, 101, 0.85);
     border-radius: 5px;
     border-style: none;
@@ -58,26 +57,35 @@ body {
     align-items: center;
     justify-content: center;
 }
+.review-container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    gap: 15px;
+}
 
 .profile-pic-review {
     width: 70px;
     height: 70px;
+    border-radius: 40px;
 }
 .footer {
     background-color: #D9D9D9;
 }
-
+.footer-text p{
+    font-family: 'Pacifico';
+}
 @media(max-device-width: 480px) {
+    
     .header{
-        display: flex;
-        justify-content: space-between;
+
     }
     .logo img {
         height: 70px;
         width: 150px;
     }
     .hamburger-menu{
-        display: block;
+        display: none;
     }
     .shopping-bag {
         display: none;
@@ -85,18 +93,85 @@ body {
     .nav-list {
         display: none;
     }
+    .hero-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .hero-text-container{
         display: none;
     }
     .nice-cake {
         width: 300px;
         height: 300px;
-        align-content: center;
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
 
     }
     .fazer-pedido{
         justify-content: center;
+        margin-bottom: 60px;
+
     }
+    .profile-pic-review {
+        width: 60px;
+        height: 60px;
+    }
+    .divisor {
+        height: 60px;
+    }
+    .photos {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #section-title  {
+        font-family: 'Pacifico';
+        font-size: 38px;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+    .picture-book{
+        display: none;
+        justify-content: center;
+        height: 1595px;
+        width: 280px;
+        border-radius: 35px;
+        background: #EDEDED;
+    }
+    .delivery {
+        display: flex;
+        flex-direction: column;
+    }
+    #icon-delivery {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #icon-delivery img{
+        width: 75px;
+        height: 80px;
+        margin: 30px;
+    }
+    #icon-delivery p {
+        margin: 20px;
+        text-align: center;
+    }
+    .contact-text {
+        text-align: center;
+        margin: 20px;
+    }
+    .social-media {
+        margin: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+     
     .footer-logo img{
         width: 220px;
         height: 130px;
@@ -105,5 +180,10 @@ body {
         justify-content: space-around;
 
     }
+    .footer-text {
+        margin: 20px;
+    }
+
+
 
 }
