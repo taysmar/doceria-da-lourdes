@@ -69,6 +69,28 @@ body {
     height: 70px;
     border-radius: 40px;
 }
+#section-title  {
+    font-family: 'Pacifico';
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+#icon-delivery {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#icon-delivery img{
+    width: 75px;
+    height: 80px;
+    margin: 30px;
+}
+#icon-delivery p {
+    margin: 20px;
+    text-align: center;
+}
 .footer {
     background-color: #D9D9D9;
 }
@@ -128,13 +150,7 @@ body {
         justify-content: center;
     }
 
-    #section-title  {
-        font-family: 'Pacifico';
-        font-size: 38px;
-        display: flex;
-        justify-content: center;
-        margin: 20px 0 20px 0;
-    }
+   
     .picture-book{
         display: none;
         justify-content: center;
@@ -147,21 +163,7 @@ body {
         display: flex;
         flex-direction: column;
     }
-    #icon-delivery {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    #icon-delivery img{
-        width: 75px;
-        height: 80px;
-        margin: 30px;
-    }
-    #icon-delivery p {
-        margin: 20px;
-        text-align: center;
-    }
+
     .contact-text {
         text-align: center;
         margin: 20px;
@@ -190,5 +192,41 @@ body {
     }
 
 
+
+}
+@media(max-device-width: 1023px) {
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+    .menu {
+        display: none;
+    }
+    .hero-text-container {
+        display: none;
+    }
+    .hero{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .hero-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .nice-cake{
+        margin: 95px 65px;
+    }
+    .fazer-pedido {
+        align-items: center;
+        margin-bottom: 55px;
+    }
+    #icon-delivery p {
+        padding: 0 90px;
+    }
 
 }
