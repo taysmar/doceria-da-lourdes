@@ -107,6 +107,9 @@ body {
         width: 150px;
     }
     .hamburger-menu{
+        display: block;
+    }
+    .hidden {
         display: none;
     }
     .shopping-bag {
@@ -201,7 +204,6 @@ body {
         margin-left: 20px;
     }
     .menu {
-        display: none;
     }
     .hero-text-container {
         display: none;
