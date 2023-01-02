@@ -1,105 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doces da Lourdes</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Doceria da Lourdes</title>
 </head>
 <body>
-    <section class="header">
-        <div class="header-container">
-            <div class="logo">
-                <img src="./src/logo.svg" alt="">
+    <section id="header">
+        <div id="header-container">
+            <div id="logo">
+                <img src="./src/logo.svg" alt="logo">
             </div>
-            
- 
-            <nav class="menu" >
-                <div class="hamburger-menu" id="hamburger-menu">
-                    <img class="icon-hamburguer" aria-controls="primary-navigation" src="./src/hambuerger.png" alt="">
-                    <img class="icon-close hidden" src="./src/close-hamburger.svg" alt="">
-                </div>
-                
-                <ul  class="nav-list" id="primary-navigation">
-                    <li><a href="#">menu</a></li>
-                    <li><a href="#">delivery</a></li>
-                    <li><a href="#">contato</a></li>
-                </ul>
-                <button class="shopping-bag">
-                    <img src="./src/ShoppingOutlined.png" alt="carrinho de compras">
-                </button>
-                
-            </nav>
-           
+            <div class="links-menu">
+                <a href="#">home</a>
+                <a href="#">delivery</a>
+                <a href="#">contato</a>
             </div>
-        
+            <div id="shopping-bag">
+                <img src="./src/ShoppingOutlined.png">
+            </div>
         </div>
     </section>
 
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-text-container">
-                <div class="hero-text-bigger">Provendo as melhores sobremesas da grande Natal desde 1983.</div>
-                <div class="subtitle">Nossa missão é buscar o melhor sabor para sua comemoração por um precinho camadada</div>
-
+    <section id="hero">
+        <div id="hero-container">
+            <div id="hero-text">
+                <h3>Provendo as melhores sobremesas da grande Natal desde 1983.</h3>
+                <p>Nossa missão é buscar o melhor sabor para sua comemoração por um precinho camarada!</p>
+                <button>Peça agora</button>
             </div>
-            <img class="nice-cake" src="./src/cake-img.svg" alt="nice cake">
-            <button class="fazer-pedido">Peça agora ></button>
-
-            <div class="review-container">
+            <div id="rating">
                 <img class="profile-pic-review" src="https://images.unsplash.com/photo-1542909192-2f2241a99c9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="profile pic" srcset="">
-                <img class="divisor" src="./src/divisor.png" alt="">
-                <p>Melhor boliho e salgados que já comi, atendimento atencioso.</p>
+                <img src="./src/divisor.png">
+                <p>Melhor bolinho e salgados que já comi. atendimento atencioso.</p>
+                <img src="./src/cake-img.svg" alt="belíssimo bolo">
+            </div>
+            <div id="hero-image"></div>
+        </div>
+    </section>
 
+    <section id="owr-delicious">
+        <div id="galery-container">
+            <div id="galery-title">
+                <h3>Nossas delícias</h3>
+            </div>
+            <div id="galery-images"></div>
+        </div>
+    </section>
+
+    <section id="owr-delivery">
+        <h3>Nosso delivery</h3>
+        <div id="delivery-container">
+            <div id="delivery-frist-collum">
+                <img src="./src/Scooter.png" alt="Scooter" id="scooter">
+                <p>Eiiitaaa Mainhaaa!! Esse Lorem ipsum é só na sacanageeem!! E que abundância meu irmão viuu!! Assim você vai matar o papai. Só digo uma coisa, Domingo ela não vai! Danadaa!! Vem minha odalisca, agora faz essa cobra coral subir!!! Pau que nasce torto, Nunca se endireita. Tchannn!! Tchannn!! Tu du du pááá! Eu gostchu muitchu, heinn! danadinha! Mainhaa! Agora use meu lorem ipsum ordinária!!! Olha o quibeee! rema, rema, ordinária!.</p>
+            </div>
+            <div id="delivery-second-collum">
+                <img src="./src/Hand Holding Heart.png" alt="hand holding heart" id="hand-with-heart">
+                <p>Eiiitaaa Mainhaaa!! Esse Lorem ipsum é só na sacanageeem!! E que abundância meu irmão viuu!! Assim você vai matar o papai. Só digo uma coisa, Domingo ela não vai! Danadaa!! Vem minha odalisca, agora faz essa cobra coral subir!!! Pau que nasce torto, Nunca se endireita. Tchannn!! Tchannn!! Tu du du pááá! Eu gostchu muitchu, heinn! danadinha! Mainhaa! Agora use meu lorem ipsum ordinária!!! Olha o quibeee! rema, rema, ordinária!.</p>
+            </div>
+            <div id="delivery-third-collum">
+                <img src="./src/Christmas Gift.png" alt="gift" id="gift">
+                <p>Eiiitaaa Mainhaaa!! Esse Lorem ipsum é só na sacanageeem!! E que abundância meu irmão viuu!! Assim você vai matar o papai. Só digo uma coisa, Domingo ela não vai! Danadaa!! Vem minha odalisca, agora faz essa cobra coral subir!!! Pau que nasce torto, Nunca se endireita. Tchannn!! Tchannn!! Tu du du pááá! Eu gostchu muitchu, heinn! danadinha! Mainhaa! Agora use meu lorem ipsum ordinária!!! Olha o quibeee! rema, rema, ordinária!.</p>
             </div>
         </div>
     </section>
-    <section class="photos">
-        <p id="section-title">Nossas delicias</p>
-        <div class="picture-book-insta"></div>
-    </section>
-    <section class="delivery">
-        <p id="section-title">Nosso delivery</p>
-        <div id="icon-delivery">
-            <img src="./src/Scooter.png" alt="delivery">
-            <p id="delivery-text">Eiiitaaa Mainhaaa!! Esse Lorem ipsum é só na sacanageeem!! E que abundância meu irmão viuu!! Assim você vai matar o papai. Só digo uma coisa, Domingo ela não vai! Danadaa!! Vem minha odalisca, agora faz essa cobra coral subir!!! Pau que nasce torto, Nunca se endireita. Tchannn!!</p>
-        </div>
-        <div id="icon-delivery">
-            <img src="./src/Hand Holding Heart.png" alt="feito com amor">
-            <p id="delivery-text">Eiiitaaa Mainhaaa!! Esse Lorem ipsum é só na sacanageeem!! E que abundância meu irmão viuu!! Assim você vai matar o papai. Só digo uma coisa, Domingo ela não vai! Danadaa!! Vem minha odalisca, agora faz essa cobra coral subir!!! Pau que nasce torto, Nunca se endireita. Tchannn!!</p>
-        </div>
-        <div id="icon-delivery">
-            <img src="./src/Christmas Gift.png" alt="entregue com carinho">
-            <p id="delivery-text">Eiiitaaa Mainhaaa!! Esse Lorem ipsum é só na sacanageeem!! E que abundância meu irmão viuu!! Assim você vai matar o papai. Só digo uma coisa, Domingo ela não vai! Danadaa!! Vem minha odalisca, agora faz essa cobra coral subir!!! Pau que nasce torto, Nunca se endireita. Tchannn!!</p>
-        </div>
-        <div class="contac-us">
-            <p id="section-title">Entre em contato</p>
-            <div class="contact-text">
+
+    <section id="contact">
+        <div id="contact-container">
+            <h3>Entre em contato</h3>
+            <div id="contact-text">
                 <p>Vem conversar com a gente! Estamos no Whatsapp e Instagram ansiosos para ser o maior destaque da sua próxima festa!</p>
             </div>
             <div class="social-media">
-                <img src="./src/WhatsAppOutlined.png" alt="Whatsapp">
-                <img src="./src/InstagramOutlined.png" alt="Instagram">
+                <img src="./src/WhatsAppOutlined.png" alt="Whatsapp" id="whatsapp">
+                <img src="./src/InstagramOutlined.png" alt="Instagram" id="instagram">
             </div>
         </div>
     </section>
-    <section class="footer">
-        <div class="footer-container">
-            
-            <div class="footer-text">
+
+    <section id="footer">
+        <div id="footer-container">
+            <div id="logo-footer">
+                <img src="./src/logo.svg" alt="Logo">
+            </div>
+            <div id="footer-text">
                 <p>Eiiitaaa Mainhaaa!! Esse Lorem ipsum é só na sacanageeem!! E que abundância meu irmão viuu!! Assim você vai matar o papai. Só digo uma coisa, Domingo ela não vai! Danadaa!! Vem minha odalisca, agora faz essa cobra coral subir!!! Pau que nasce torto, Nunca se endireita. Tchannn!! Tchannn!! Tu du du pááá! Eu gostchu muitchu, heinn! danadinha! Mainhaa! Agora use meu lorem ipsum ordinária!!! Olha o quibeee! rema, rema, ordinária!.
-                </p>
-                <p>Você usa o Lorem Ipsum tradicional? Sabe de nada inocente!! Conheça meu lorem que é Tchan, Tchan, Tchannn!! Txu Txu Tu Paaaaa!! Vem, vem ordinária!! Venha provar do meu dendê que você não vai se arrepender. Só na sacanageeem!! Eu gostchu muitchu, heinn! Eitchaaa template cheio de abundância danadaaa!! Assim você mata o papai hein!? Etâaaa Mainhaaaaa...me abusa nesse seu layout, me gera, me geraaaa ordinária!!! Só na sacanagem!!!! Venha provar do meu dendê Tu du du pááá!.</p>
+ 
+                    Você usa o Lorem Ipsum tradicional? Sabe de nada inocente!! Conheça meu lorem que é Tchan, Tchan, Tchannn!! Txu Txu Tu Paaaaa!! Vem, vem ordinária!! Venha provar do meu dendê que você não vai se arrepender. Só na sacanageeem!! Eu gostchu muitchu, heinn! Eitchaaa template cheio de abundância danadaaa!! Assim você mata o papai hein!? Etâaaa Mainhaaaaa...me abusa nesse seu layout, me gera, me geraaaa ordinária!!! Só na sacanagem!!!! Venha provar do meu dendê Tu du du pááá!.
+                     </p>
             </div>
-            <div class="footer-logo">
-                <img src="./src/logo.svg" alt="logo da doceria">
-            </div>
-        </div>        
+        </div>
     </section>
 
 
 
-<script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
