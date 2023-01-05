@@ -8,9 +8,12 @@
     --clr-dark-pink: #EB5151;
     --clr-background-footer: #D9D9D9;
 }
+
 body {
     background-color: #F9F5F0;
+    font-family: quicksand;
 }
+
 .flex {
     display:flex;
     gap: var(--gap, 1rem);
@@ -27,8 +30,50 @@ body {
     color: #93562A;
     font-size: 20px;
 }
+#shopping-bag {
+    margin: 20px ;
+}
+
+#order button{
+    background-color: #EB5151;
+    width: 230px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: Quicksand;
+    font-size: 26px;
+}
+#footer{
+    background-color: #D9D9D9;
+}
+@media (max-width: 850px) {
+    #header, #hero, #our-delicious, #our-delivery, #contact{
+        margin: 20px;
+    }
+    #hero-text h3, #hero-text p {
+        display: none;
+    }
+    
+   #review {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+
+   }
+   #review-container {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+   }
+   #divisor {
+    margin: 12px;
+   }
+
+}
 
 @media (max-width: 560px){
+   
     .primary-navigation {
         position: fixed;
         inset: 0 0 0 30%;
@@ -46,26 +91,78 @@ body {
     }
 
     .mobile-nav-toggle{
-        position: absolute;
+        position:  absolute;
         z-index: 9999;
         background: url("./src/hambuerger.png");
         background-repeat: no-repeat;
         border: 0;
         width: 60px;
         aspect-ratio: 1;
-        top: 32px;
-        right: 32px;
+        left: 250px;
+        margin-top: 30px;  
     
     }
+    #hero-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+   #order {
+    margin-top: 20px;
+   }
+
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url("./src/close-hamburger.svg");
+        
+    }
+
+    #our-delicious, #our-delivery h3 {
+        font-family: Pacifico;
+        display: flex;
+        justify-content: center;
+    }
+    #delivery-container img {
+        width: 60px;
+        height: 60px;
+    }
+    #delivery-frist-collum, #delivery-second-collum, #delivery-third-collum {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 20px;
+    }
+
+    #contact-container h3 {
+        font-family: Pacifico;
+    }
+    #contact-container {
+        text-align: center;
+    }
+    #whatsapp, #instagram{
+        margin: 30px;
+    }
+
+    #footer-container{ 
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+    }
+    #footer-logo-img{
+        width: 200px;
+        height: 200px;
+    }
+
 
     
 }
 
 
 @media (max-width: 425px) {
-body {
-    margin: 20px;
-}
+
 #header-container{
     display: flex;
     align-items: center;
@@ -84,7 +181,9 @@ body {
     width: 60px;
     border-radius: 30px;
 }
-#shopping-bag{
-    display: none;
+#cake-pic{
+    width: 280px;
+    height: 300px;
 }
+
 }
