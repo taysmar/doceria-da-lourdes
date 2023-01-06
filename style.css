@@ -54,6 +54,43 @@ body {
     #hero-text h3, #hero-text p {
         display: none;
     }
+
+    #header-container {
+        display: flex;
+    }
+    .primary-navigation {
+        position: fixed;
+        inset: 0 0 0 50%;
+        padding: min(190px, 135px) 50px;
+        background-color:	hsla(0, 100%, 70%, 0.418);
+        backdrop-filter: blur(1rem);
+        margin: 0;
+        transform: translateX(100%);
+        transition: transform  350ms ease-in;
+
+    }
+
+    .primary-navigation[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    .mobile-nav-toggle{
+        position:  absolute;
+        z-index: 9999;
+        background: url("./src/hambuerger.png");
+        background-repeat: no-repeat;
+        border: 0;
+        width: 60px;
+        aspect-ratio: 1;
+        left: 800px;
+        margin-top: 45px;  
+    }
+    
+
+    #primary-navigation a {
+        font-size: 40px;
+        margin: 20px;
+    }
     
    #review {
     display: flex;
